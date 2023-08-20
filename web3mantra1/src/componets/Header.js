@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 const Header = () => {
   return (
-    <div className="navbar">                
+    <div className="navbar">
+      <h3>Logo</h3>                
       <ul>
-        <li><Link className="link" to="/">Home</Link></li>
-        <li><Link className="link" to="/best-center">About us</Link></li>
-        <li><Link className="link" to="/best-service">Our Service</Link></li>
-         <li><Link className="link" to="/reach-us">Reach Us</Link></li>
+         <li><NavLink  to="/">Home</NavLink></li>
+         <li><NavLink  to="/best-center">About us</NavLink></li>
+         <li><NavLink  to="/best-service">Our Service</NavLink></li>
+         <li><NavLink to="/reach-us">Reach Us</NavLink></li>
         </ul>
     </div>
   )
